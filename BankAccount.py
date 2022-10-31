@@ -17,12 +17,12 @@ class BankAccount:
 
     # Withdraw 
     def withdraw(self, amount):
-        self.balance -= amount
-        if self.balance < amount: 
-            self.balance -= 10 
-            print ('Insuffient Funds')
-        else: 
+        if self.balance > 0: 
+            self.balance -= amount
             print(f'Amount withdrawn: ${amount}. New balance: ${self.balance}')
+        else: 
+            self.balance -= 10
+            print('Insuffient Funds')
 
     # Get Balance 
     def get_balance(self): 
@@ -38,12 +38,10 @@ class BankAccount:
     # how to sensitized the bank account number 
     # Print Statement 
     def print_statment(self):
-        print(f"{self.full_name} Account No.: {self.account_number} Balance: ${self.balance}")
+        print(f"{self.full_name} Account No.: {self.account_number} Balance: ${round(self.balance, 2)}")
 
 
-
-
-
+# why is it printing insuffient funds and why is it not rounding 
 mitchell_hudson = BankAccount("Mitchell Hudson", "1", 0)
 mitchell_hudson.deposit(400000)
 mitchell_hudson.print_statment()
@@ -55,8 +53,16 @@ jennifer_carrneo = BankAccount("Jennifer Carreno", "2", 0)
 jennifer_carrneo.deposit(500)
 jennifer_carrneo.add_interest()
 jennifer_carrneo.print_statment()
+jennifer_carrneo.withdraw(550)
+jennifer_carrneo.print_statment()
 
 stella_collins = BankAccount('Stella Collins', "3", 0)
+stella_collins.deposit(300)
+stella_collins.print_statment()
+stella_collins.add_interest()
+stella_collins.withdraw(200)
+stella_collins.print_statment()
+
 
 
 
