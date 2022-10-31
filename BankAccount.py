@@ -44,20 +44,20 @@ class BankAccount:
         print(f"{self.full_name} Account No.: {hidden} Balance: ${round(self.balance, 2)}")
 
 
-# why is it printing insuffient funds and why is it not rounding 
-# mitchell_hudson = BankAccount("Mitchell Hudson", "1", 0)
-# mitchell_hudson.deposit(400000)
-# mitchell_hudson.print_statment()
-# mitchell_hudson.add_interest()
-# mitchell_hudson.withdraw(150)
-# mitchell_hudson.print_statment()
+why is it printing insuffient funds and why is it not rounding 
+mitchell_hudson = BankAccount("Mitchell Hudson", "1", 0)
+mitchell_hudson.deposit(400000)
+mitchell_hudson.print_statment()
+mitchell_hudson.add_interest()
+mitchell_hudson.withdraw(150)
+mitchell_hudson.print_statment()
 
-# jennifer_carrneo = BankAccount("Jennifer Carreno", "2", 0)
-# jennifer_carrneo.deposit(500)
-# jennifer_carrneo.add_interest()
-# jennifer_carrneo.print_statment()
-# jennifer_carrneo.withdraw(550)
-# jennifer_carrneo.print_statment()
+jennifer_carrneo = BankAccount("Jennifer Carreno", "2", 0)
+jennifer_carrneo.deposit(500)
+jennifer_carrneo.add_interest()
+jennifer_carrneo.print_statment()
+jennifer_carrneo.withdraw(550)
+jennifer_carrneo.print_statment()
 
 stella_collins = BankAccount('Stella Collins', "3", 0)
 stella_collins.deposit(300)
