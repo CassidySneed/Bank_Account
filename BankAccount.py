@@ -72,10 +72,7 @@ stella_collins.print_statment()
 
 
 
-# mitchell_hudson.withdraw(50)
-# mitchell_hudson.get_balance()
-# mitchell_hudson.add_interest()
-# mitchell_hudson.print_statment()
+
 
 
 
